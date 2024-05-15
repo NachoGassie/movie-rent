@@ -1,0 +1,1 @@
+export const mainTitle = 'Rent-a-Movie';

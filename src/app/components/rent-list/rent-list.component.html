@@ -1,0 +1,18 @@
+
+<h2>Tus Peliculas Alquiladas</h2>
+
+<ul>
+  @for (movie of rentedMovies; track movie.id) {
+    <li>
+      <div class="movieItem">
+        <h3>{{ movie.title }} </h3>
+        <p>{{ movie.releaseYear }}</p>
+        <p>{{ movie.rentPrice | currency}}</p>
+        <button 
+          (click)="removeFromRent(movie)"
+          class="removeBtn"
+          >x</button>
+      </div>
+    </li>
+  }
+</ul>

@@ -1,0 +1,12 @@
+<nav class="navBar">
+  <ul class="links">
+    <li>
+      <a class="logo" [routerLink]="['/home']">{{ title }}</a>
+    </li>
+    @for (link of links; track title) {
+      <li [routerLinkActive]="['active']">
+        <a [routerLink]="[link.url]">{{ link.title }}</a>
+      </li>
+    }
+  </ul>
+</nav>

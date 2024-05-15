@@ -1,0 +1,40 @@
+<main>
+  
+  <section>
+    <h1>Lista de Peliculas</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Poster</th>
+          <th>Titulo</th>
+          <th>Genero</th>
+          <th>Año de Lanzamiento</th>
+          <th>Precio de Renta</th>
+          <th>Rentar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          @for (movie of movies; track movie.id) {
+            <td>
+              <img [src]="movie.poster" [alt]="movie.title">
+            </td>
+            <td>{{ movie.title }}</td>
+            <td>{{ movie.genre }}</td>
+            <td>{{ movie.releaseYear }}</td>
+            <td>{{ movie.rentPrice | currency}}</td>
+              @if (!movie.isRented) {
+                <td><button class="rentBtn" (click)="rentMovie(movie)">Alquilar</button></td>
+              }@else{
+                <td><p class="rented">Alquilada</p></td>
+              }
+          }
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+
+  <app-rent-list></app-rent-list>
+</main>
+

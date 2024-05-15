@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+  --main-color: #222;
+  --main-color-light: #2b2f32;
+  --secondary-color: #ddd;
+  --grey: #676767;
+  --gold: #ffc107;
+  --danger: #dc3545;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+}
+main{
+  width: 90%;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ul{
+  list-style: none;
+}
+button{
+  cursor: pointer;
+  box-shadow: none;
+  outline: none;
+  border: none;
+}

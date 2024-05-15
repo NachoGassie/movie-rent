@@ -1,0 +1,24 @@
+.navBar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: var(--main-color-light);
+  border-bottom: 1px solid var(--secondary-color);
+}
+.logo{
+  font-size: large;
+}
+.links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.links li:hover{
+  scale: 1.1;
+}
+.links li.active{
+  color: var(--gold);
+}
