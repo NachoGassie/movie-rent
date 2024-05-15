@@ -2,7 +2,7 @@
 
 Alumno: Ignacio Gassie  
 DNI: 43091070  
-Email: nachogassie@gmail.com
+Email: nachogassie@gmail.com  
 Sede: Tandil  
 
 Realicé el proyecto basado en un alquiler de peliculas.  
