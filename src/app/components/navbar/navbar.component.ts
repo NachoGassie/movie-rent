@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { mainTitle } from '../../common/common.constants';
-import { Link } from './navbar.interface';
+import { Link } from './interface/navbar.interface';
 
 @Component({
   selector: 'app-navbar',
@@ -10,11 +9,11 @@ import { Link } from './navbar.interface';
 })
 export class NavbarComponent implements OnInit{
 
-  title = mainTitle;
+  title = 'Rent-a-Movie';
 
   links: Link[] = [
     { title: 'Home', url: '/home', active: false },
-    { title: 'About', url: '/about', active: false },
+    { title: 'Rent', url: '/rent', active: false },
   ]
   
   constructor(

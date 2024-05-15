@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Movie } from '../common/common.interface';
+import { Movie } from '../common';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MovieRentService } from '../../service/movie-rent.service';
-import { Movie } from '../../common/common.interface';
+import { MovieRentService } from '../../service';
+import { Movie } from '../../common';
 
 @Component({
   selector: 'app-rent-list',

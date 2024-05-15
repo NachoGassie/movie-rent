@@ -1,6 +1,5 @@
-// import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Movie } from '../common/common.interface';
+import { Movie } from '../common';
 import { Observable, of } from 'rxjs';
 
 @Injectable({

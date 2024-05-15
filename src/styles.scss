@@ -33,3 +33,14 @@ button{
   outline: none;
   border: none;
 }
+.mainBtn{
+  padding: 10px;
+  border-radius: 10%;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  background-color: var(--main-color-light);
+}
+.mainBtn:hover{
+  color: var(--main-color-light);
+  background-color: var(--gold);
+}

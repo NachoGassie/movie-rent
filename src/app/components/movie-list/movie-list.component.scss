@@ -1,0 +1,22 @@
+img{
+  width: 100px;
+  height: 100px;
+}
+table, th, td {
+  border: 1px solid var(--grey);
+}
+table{
+  text-align: center;
+}
+th, td{
+  width: 100px;
+}
+th{
+  color: var(--gold);
+}
+td{
+  height: 100px;
+}
+.rented{
+  color: var(--danger);
+}

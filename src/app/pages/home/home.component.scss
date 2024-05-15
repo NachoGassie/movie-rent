@@ -1,37 +1,16 @@
 main{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70%;
+  gap: 20px;
 }
-img{
-  width: 100px;
-  height: 100px;
-}
-table, th, td {
-  border: 1px solid var(--grey);
-}
-table{
-  text-align: center;
-}
-th, td{
-  width: 100px;
-}
-th{
+h1{
   color: var(--gold);
 }
-td{
-  height: 100px;
-}
-.rented{
-  color: var(--danger);
-}
-.rentBtn{
-  padding: 10px;
-  border-radius: 10%;
-  border: 1px solid var(--gold);
-  color: var(--gold);
-  background-color: var(--main-color-light);
-}
-.rentBtn:hover{
-  color: var(--main-color-light);
-  background-color: var(--gold);
+button{
+  height: 50px;
+  width: 120px;
 }
