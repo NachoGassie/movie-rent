@@ -20,8 +20,8 @@ export class MovieRentService {
   }
 
   removeFromRented(movie: Movie): void{
-    const filtered = this._movies.filter(m => m.id !== movie.id);
+    this._movies  = this._movies.filter(m => m.id !== movie.id);
     movie.isRented = false;
-    this._moviesSubject.next(filtered);
+    this._moviesSubject.next(this._movies);
   }
 }
