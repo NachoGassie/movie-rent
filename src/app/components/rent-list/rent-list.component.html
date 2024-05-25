@@ -1,13 +1,17 @@
-<ul class="containerList">
-  @for (movie of rentedMovies; track movie.id) {
-    <li class="movieItem">
-      <h3>{{ movie.title | uppercase}} </h3>
-      <p>{{ movie.releaseYear}}</p>
-      <p>{{ movie.rentPrice | currency}}</p>
-      <button 
-        (click)="removeFromRent(movie)"
-        class="removeBtn"
-      >x</button>
-    </li>
-  }
-</ul>
+@if (rentedMovies.length > 0) {
+  <ul class="containerList">
+    @for (movie of rentedMovies; track movie.id) {
+      <li class="movieItem">
+        <h3 class="title">{{ movie.title | uppercase}} </h3>
+        <p>{{ movie.releaseYear}}</p>
+        <p>{{ movie.rentPrice | currency}}</p>
+        <button 
+          (click)="removeFromRent(movie)"
+          class="removeBtn"
+        >x</button>
+      </li>
+    }
+  </ul>  
+}@else {
+  <h3>Alquile las peliculas que desee</h3>
+}
