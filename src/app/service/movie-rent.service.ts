@@ -12,8 +12,7 @@ export class MovieRentService {
   movies = this._moviesSubject.asObservable();
 
   addToRented(movie: Movie): void{
-    const movieFound = this._movies.find(m => m.id === movie.id);
-    if (!movieFound) this._movies.push(movie);
+    this._movies.push(movie);
     movie.isRented = true;
 
     this._moviesSubject.next(this._movies);
